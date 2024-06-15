@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h1>Sign Up</h1>
+
+            <div class="field email-field">
+                <div class="">
+                    <input type="text" placeholder="Enter Your Email" class="email">
+                </div>
+                <span class="error">
+                    <i class="ri-error-warning-line error-icon"></i>
+                    <p class="error-text">Please enter a valid email.</p>
+                </span>
+            </div>
+            <div class="field password-field">
+                <div class="">
+                    <input type="password" placeholder="Create Password" class="password">
+                    <i class="ri-eye-off-line show-eye"></i>
+                </div>
+                <span class="error">
+                    <i class="ri-error-warning-line error-icon"></i>
+                    <p class="error-text">Please enter atleast 6 characters with numbers, symbols, small and capital
+                        letter.</p>
+                </span>
+            </div>
+            <div class="field confirm-password-field">
+                <div class="">
+                    <input type="password" placeholder="Confirm Password" class="cPassword">
+                    <i class="ri-eye-off-line show-eye"></i>
+                </div>
+                <span class="error">
+                    <i class="ri-error-warning-line error-icon"></i>
+                    <p class="error-text">Password does not match.</p>
+                </span>
+            </div>
+            <div>
+                <input id="btn" type="submit" value="SignUp Now">
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
